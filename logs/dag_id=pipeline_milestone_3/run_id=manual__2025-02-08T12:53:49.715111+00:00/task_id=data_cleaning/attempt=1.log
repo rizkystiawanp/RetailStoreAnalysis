@@ -1,0 +1,23 @@
+[2025-02-08T12:53:53.560+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: pipeline_milestone_3.data_cleaning manual__2025-02-08T12:53:49.715111+00:00 [queued]>
+[2025-02-08T12:53:53.569+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: pipeline_milestone_3.data_cleaning manual__2025-02-08T12:53:49.715111+00:00 [queued]>
+[2025-02-08T12:53:53.569+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2025-02-08T12:53:53.569+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 1
+[2025-02-08T12:53:53.569+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2025-02-08T12:53:53.575+0000] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): data_cleaning> on 2025-02-08 12:53:49.715111+00:00
+[2025-02-08T12:53:53.583+0000] {standard_task_runner.py:52} INFO - Started process 233 to run task
+[2025-02-08T12:53:53.586+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'pipeline_milestone_3', 'data_cleaning', 'manual__2025-02-08T12:53:49.715111+00:00', '--job-id', '123', '--raw', '--subdir', 'DAGS_FOLDER/P2M3_RizkySP_DAG.py', '--cfg-path', '/tmp/tmp26oxt15y', '--error-file', '/tmp/tmp22kanm8f']
+[2025-02-08T12:53:53.586+0000] {standard_task_runner.py:80} INFO - Job 123: Subtask data_cleaning
+[2025-02-08T12:53:53.632+0000] {task_command.py:371} INFO - Running <TaskInstance: pipeline_milestone_3.data_cleaning manual__2025-02-08T12:53:49.715111+00:00 [running]> on host b33620135048
+[2025-02-08T12:53:53.677+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=RizkySP
+AIRFLOW_CTX_DAG_ID=pipeline_milestone_3
+AIRFLOW_CTX_TASK_ID=data_cleaning
+AIRFLOW_CTX_EXECUTION_DATE=2025-02-08T12:53:49.715111+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-02-08T12:53:49.715111+00:00
+[2025-02-08T12:53:54.010+0000] {python.py:173} INFO - Done. Returned value was: None
+[2025-02-08T12:53:54.015+0000] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=pipeline_milestone_3, task_id=data_cleaning, execution_date=20250208T125349, start_date=20250208T125353, end_date=20250208T125354
+[2025-02-08T12:53:54.056+0000] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-02-08T12:53:54.073+0000] {local_task_job.py:279} INFO - 1 downstream tasks scheduled from follow-on schedule check
