@@ -1,0 +1,24 @@
+[2025-02-08T10:05:28.607+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: postgres_to_elasticsearch_dag.fetch_from_postgres scheduled__2025-02-01T09:10:00+00:00 [queued]>
+[2025-02-08T10:05:28.616+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: postgres_to_elasticsearch_dag.fetch_from_postgres scheduled__2025-02-01T09:10:00+00:00 [queued]>
+[2025-02-08T10:05:28.616+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2025-02-08T10:05:28.617+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 1
+[2025-02-08T10:05:28.617+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2025-02-08T10:05:28.623+0000] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): fetch_from_postgres> on 2025-02-01 09:10:00+00:00
+[2025-02-08T10:05:28.634+0000] {standard_task_runner.py:52} INFO - Started process 1329 to run task
+[2025-02-08T10:05:28.637+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'postgres_to_elasticsearch_dag', 'fetch_from_postgres', 'scheduled__2025-02-01T09:10:00+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/P2M3_RizkySP_DAG.py', '--cfg-path', '/tmp/tmpqfe6cdey', '--error-file', '/tmp/tmpw2pa4366']
+[2025-02-08T10:05:28.639+0000] {standard_task_runner.py:80} INFO - Job 11: Subtask fetch_from_postgres
+[2025-02-08T10:05:28.709+0000] {task_command.py:371} INFO - Running <TaskInstance: postgres_to_elasticsearch_dag.fetch_from_postgres scheduled__2025-02-01T09:10:00+00:00 [running]> on host b33620135048
+[2025-02-08T10:05:28.785+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=RizkySP
+AIRFLOW_CTX_DAG_ID=postgres_to_elasticsearch_dag
+AIRFLOW_CTX_TASK_ID=fetch_from_postgres
+AIRFLOW_CTX_EXECUTION_DATE=2025-02-01T09:10:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-02-01T09:10:00+00:00
+[2025-02-08T10:05:28.822+0000] {base.py:68} INFO - Using connection ID '***_postgres' for task execution.
+[2025-02-08T10:05:30.246+0000] {python.py:173} INFO - Done. Returned value was: None
+[2025-02-08T10:05:30.297+0000] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=postgres_to_elasticsearch_dag, task_id=fetch_from_postgres, execution_date=20250201T091000, start_date=20250208T100528, end_date=20250208T100530
+[2025-02-08T10:05:30.331+0000] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-02-08T10:05:30.383+0000] {local_task_job.py:279} INFO - 1 downstream tasks scheduled from follow-on schedule check

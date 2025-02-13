@@ -1,0 +1,34 @@
+[2025-02-08T10:05:47.511+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: postgres_to_elasticsearch_dag.post_to_elasticsearch manual__2025-02-08T10:05:30.726220+00:00 [queued]>
+[2025-02-08T10:05:47.524+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: postgres_to_elasticsearch_dag.post_to_elasticsearch manual__2025-02-08T10:05:30.726220+00:00 [queued]>
+[2025-02-08T10:05:47.524+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2025-02-08T10:05:47.524+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 1
+[2025-02-08T10:05:47.524+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2025-02-08T10:05:47.535+0000] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): post_to_elasticsearch> on 2025-02-08 10:05:30.726220+00:00
+[2025-02-08T10:05:47.548+0000] {standard_task_runner.py:52} INFO - Started process 1350 to run task
+[2025-02-08T10:05:47.549+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'postgres_to_elasticsearch_dag', 'post_to_elasticsearch', 'manual__2025-02-08T10:05:30.726220+00:00', '--job-id', '16', '--raw', '--subdir', 'DAGS_FOLDER/P2M3_RizkySP_DAG.py', '--cfg-path', '/tmp/tmpzc96_2io', '--error-file', '/tmp/tmpi0z5ytdj']
+[2025-02-08T10:05:47.551+0000] {standard_task_runner.py:80} INFO - Job 16: Subtask post_to_elasticsearch
+[2025-02-08T10:05:47.622+0000] {task_command.py:371} INFO - Running <TaskInstance: postgres_to_elasticsearch_dag.post_to_elasticsearch manual__2025-02-08T10:05:30.726220+00:00 [running]> on host b33620135048
+[2025-02-08T10:05:47.687+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=RizkySP
+AIRFLOW_CTX_DAG_ID=postgres_to_elasticsearch_dag
+AIRFLOW_CTX_TASK_ID=post_to_elasticsearch
+AIRFLOW_CTX_EXECUTION_DATE=2025-02-08T10:05:30.726220+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-02-08T10:05:30.726220+00:00
+[2025-02-08T10:05:47.843+0000] {taskinstance.py:1902} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/P2M3_RizkySP_DAG.py", line 48, in post_to_elasticsearch
+    es.index(index='retail_inventory', id=i, document=row.to_dict())
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/client/utils.py", line 168, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+TypeError: index() got an unexpected keyword argument 'document'
+[2025-02-08T10:05:47.862+0000] {taskinstance.py:1412} INFO - Marking task as FAILED. dag_id=postgres_to_elasticsearch_dag, task_id=post_to_elasticsearch, execution_date=20250208T100530, start_date=20250208T100547, end_date=20250208T100547
+[2025-02-08T10:05:47.878+0000] {standard_task_runner.py:97} ERROR - Failed to execute job 16 for task post_to_elasticsearch (index() got an unexpected keyword argument 'document'; 1350)
+[2025-02-08T10:05:47.901+0000] {local_task_job.py:156} INFO - Task exited with return code 1
+[2025-02-08T10:05:47.938+0000] {local_task_job.py:279} INFO - 0 downstream tasks scheduled from follow-on schedule check
