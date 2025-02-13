@@ -1,0 +1,592 @@
+[2025-02-08T10:34:07.366+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: pipeline_milestone_3.post_to_elasticsearch manual__2025-02-08T10:33:59.611299+00:00 [queued]>
+[2025-02-08T10:34:07.371+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: pipeline_milestone_3.post_to_elasticsearch manual__2025-02-08T10:33:59.611299+00:00 [queued]>
+[2025-02-08T10:34:07.371+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2025-02-08T10:34:07.371+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 1
+[2025-02-08T10:34:07.371+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2025-02-08T10:34:07.378+0000] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): post_to_elasticsearch> on 2025-02-08 10:33:59.611299+00:00
+[2025-02-08T10:34:07.390+0000] {standard_task_runner.py:52} INFO - Started process 1812 to run task
+[2025-02-08T10:34:07.394+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'pipeline_milestone_3', 'post_to_elasticsearch', 'manual__2025-02-08T10:33:59.611299+00:00', '--job-id', '37', '--raw', '--subdir', 'DAGS_FOLDER/P2M3_RizkySP_DAG.py', '--cfg-path', '/tmp/tmp9_zmweng', '--error-file', '/tmp/tmpn_s5hty3']
+[2025-02-08T10:34:07.395+0000] {standard_task_runner.py:80} INFO - Job 37: Subtask post_to_elasticsearch
+[2025-02-08T10:34:07.444+0000] {task_command.py:371} INFO - Running <TaskInstance: pipeline_milestone_3.post_to_elasticsearch manual__2025-02-08T10:33:59.611299+00:00 [running]> on host b33620135048
+[2025-02-08T10:34:07.481+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=RizkySP
+AIRFLOW_CTX_DAG_ID=pipeline_milestone_3
+AIRFLOW_CTX_TASK_ID=post_to_elasticsearch
+AIRFLOW_CTX_EXECUTION_DATE=2025-02-08T10:33:59.611299+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-02-08T10:33:59.611299+00:00
+[2025-02-08T10:34:10.178+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/0 [status:201 request:2.600s]
+[2025-02-08T10:34:10.194+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/1 [status:201 request:0.009s]
+[2025-02-08T10:34:10.197+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/2 [status:201 request:0.003s]
+[2025-02-08T10:34:10.200+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/3 [status:201 request:0.002s]
+[2025-02-08T10:34:10.203+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/4 [status:201 request:0.003s]
+[2025-02-08T10:34:10.215+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/5 [status:201 request:0.012s]
+[2025-02-08T10:34:10.228+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/6 [status:201 request:0.010s]
+[2025-02-08T10:34:10.261+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/7 [status:201 request:0.030s]
+[2025-02-08T10:34:10.274+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/8 [status:201 request:0.008s]
+[2025-02-08T10:34:10.285+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/9 [status:201 request:0.009s]
+[2025-02-08T10:34:10.327+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/10 [status:201 request:0.039s]
+[2025-02-08T10:34:10.340+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/11 [status:201 request:0.011s]
+[2025-02-08T10:34:10.450+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/12 [status:201 request:0.100s]
+[2025-02-08T10:34:10.498+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/13 [status:201 request:0.043s]
+[2025-02-08T10:34:10.911+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/14 [status:201 request:0.396s]
+[2025-02-08T10:34:10.934+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/15 [status:201 request:0.019s]
+[2025-02-08T10:34:10.948+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/16 [status:201 request:0.012s]
+[2025-02-08T10:34:10.996+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/17 [status:201 request:0.044s]
+[2025-02-08T10:34:11.011+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/18 [status:201 request:0.011s]
+[2025-02-08T10:34:11.016+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/19 [status:201 request:0.003s]
+[2025-02-08T10:34:11.020+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/20 [status:201 request:0.003s]
+[2025-02-08T10:34:11.023+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/21 [status:201 request:0.002s]
+[2025-02-08T10:34:11.026+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/22 [status:201 request:0.004s]
+[2025-02-08T10:34:11.031+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/23 [status:201 request:0.003s]
+[2025-02-08T10:34:11.035+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/24 [status:201 request:0.003s]
+[2025-02-08T10:34:11.037+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/25 [status:201 request:0.002s]
+[2025-02-08T10:34:11.039+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/26 [status:201 request:0.002s]
+[2025-02-08T10:34:11.041+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/27 [status:201 request:0.002s]
+[2025-02-08T10:34:11.044+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/28 [status:201 request:0.002s]
+[2025-02-08T10:34:11.051+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/29 [status:201 request:0.007s]
+[2025-02-08T10:34:11.066+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/30 [status:201 request:0.012s]
+[2025-02-08T10:34:11.084+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/31 [status:201 request:0.012s]
+[2025-02-08T10:34:11.101+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/32 [status:201 request:0.010s]
+[2025-02-08T10:34:11.137+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/33 [status:201 request:0.033s]
+[2025-02-08T10:34:11.157+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/34 [status:201 request:0.017s]
+[2025-02-08T10:34:11.186+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/35 [status:201 request:0.023s]
+[2025-02-08T10:34:11.283+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/36 [status:201 request:0.074s]
+[2025-02-08T10:34:11.309+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/37 [status:201 request:0.019s]
+[2025-02-08T10:34:11.330+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/38 [status:201 request:0.017s]
+[2025-02-08T10:34:11.366+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/39 [status:201 request:0.033s]
+[2025-02-08T10:34:11.406+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/40 [status:201 request:0.029s]
+[2025-02-08T10:34:11.433+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/41 [status:201 request:0.023s]
+[2025-02-08T10:34:11.458+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/42 [status:201 request:0.021s]
+[2025-02-08T10:34:11.520+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/43 [status:201 request:0.056s]
+[2025-02-08T10:34:11.591+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/44 [status:201 request:0.045s]
+[2025-02-08T10:34:11.649+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/45 [status:201 request:0.047s]
+[2025-02-08T10:34:11.670+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/46 [status:201 request:0.016s]
+[2025-02-08T10:34:11.695+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/47 [status:201 request:0.018s]
+[2025-02-08T10:34:11.715+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/48 [status:201 request:0.013s]
+[2025-02-08T10:34:11.739+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/49 [status:201 request:0.019s]
+[2025-02-08T10:34:11.757+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/50 [status:201 request:0.014s]
+[2025-02-08T10:34:11.840+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/51 [status:201 request:0.079s]
+[2025-02-08T10:34:11.874+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/52 [status:201 request:0.025s]
+[2025-02-08T10:34:11.904+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/53 [status:201 request:0.021s]
+[2025-02-08T10:34:11.944+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/54 [status:201 request:0.027s]
+[2025-02-08T10:34:11.999+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/55 [status:201 request:0.049s]
+[2025-02-08T10:34:12.041+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/56 [status:201 request:0.030s]
+[2025-02-08T10:34:12.096+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/57 [status:201 request:0.036s]
+[2025-02-08T10:34:12.155+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/58 [status:201 request:0.048s]
+[2025-02-08T10:34:12.210+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/59 [status:201 request:0.041s]
+[2025-02-08T10:34:12.343+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/60 [status:201 request:0.078s]
+[2025-02-08T10:34:12.382+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/61 [status:201 request:0.028s]
+[2025-02-08T10:34:12.423+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/62 [status:201 request:0.033s]
+[2025-02-08T10:34:12.666+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/63 [status:201 request:0.236s]
+[2025-02-08T10:34:12.939+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/64 [status:201 request:0.239s]
+[2025-02-08T10:34:13.126+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/65 [status:201 request:0.176s]
+[2025-02-08T10:34:13.230+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/66 [status:201 request:0.084s]
+[2025-02-08T10:34:13.313+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/67 [status:201 request:0.070s]
+[2025-02-08T10:34:13.443+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/68 [status:201 request:0.103s]
+[2025-02-08T10:34:13.492+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/69 [status:201 request:0.036s]
+[2025-02-08T10:34:13.522+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/70 [status:201 request:0.025s]
+[2025-02-08T10:34:13.546+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/71 [status:201 request:0.018s]
+[2025-02-08T10:34:13.560+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/72 [status:201 request:0.011s]
+[2025-02-08T10:34:13.580+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/73 [status:201 request:0.015s]
+[2025-02-08T10:34:13.629+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/74 [status:201 request:0.037s]
+[2025-02-08T10:34:13.725+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/75 [status:201 request:0.083s]
+[2025-02-08T10:34:13.826+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/76 [status:201 request:0.089s]
+[2025-02-08T10:34:13.879+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/77 [status:201 request:0.036s]
+[2025-02-08T10:34:13.951+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/78 [status:201 request:0.060s]
+[2025-02-08T10:34:13.983+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/79 [status:201 request:0.022s]
+[2025-02-08T10:34:14.021+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/80 [status:201 request:0.029s]
+[2025-02-08T10:34:14.041+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/81 [status:201 request:0.016s]
+[2025-02-08T10:34:14.055+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/82 [status:201 request:0.010s]
+[2025-02-08T10:34:14.070+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/83 [status:201 request:0.012s]
+[2025-02-08T10:34:14.092+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/84 [status:201 request:0.019s]
+[2025-02-08T10:34:14.110+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/85 [status:201 request:0.014s]
+[2025-02-08T10:34:14.128+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/86 [status:201 request:0.012s]
+[2025-02-08T10:34:14.145+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/87 [status:201 request:0.014s]
+[2025-02-08T10:34:14.162+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/88 [status:201 request:0.014s]
+[2025-02-08T10:34:14.178+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/89 [status:201 request:0.013s]
+[2025-02-08T10:34:14.199+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/90 [status:201 request:0.015s]
+[2025-02-08T10:34:14.229+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/91 [status:201 request:0.026s]
+[2025-02-08T10:34:14.296+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/92 [status:201 request:0.052s]
+[2025-02-08T10:34:14.335+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/93 [status:201 request:0.029s]
+[2025-02-08T10:34:14.354+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/94 [status:201 request:0.014s]
+[2025-02-08T10:34:14.377+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/95 [status:201 request:0.019s]
+[2025-02-08T10:34:14.401+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/96 [status:201 request:0.020s]
+[2025-02-08T10:34:14.423+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/97 [status:201 request:0.015s]
+[2025-02-08T10:34:14.440+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/98 [status:201 request:0.013s]
+[2025-02-08T10:34:14.458+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/99 [status:201 request:0.015s]
+[2025-02-08T10:34:14.478+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/100 [status:201 request:0.017s]
+[2025-02-08T10:34:14.499+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/101 [status:201 request:0.017s]
+[2025-02-08T10:34:14.523+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/102 [status:201 request:0.021s]
+[2025-02-08T10:34:14.548+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/103 [status:201 request:0.022s]
+[2025-02-08T10:34:14.573+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/104 [status:201 request:0.018s]
+[2025-02-08T10:34:14.588+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/105 [status:201 request:0.011s]
+[2025-02-08T10:34:14.604+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/106 [status:201 request:0.012s]
+[2025-02-08T10:34:14.622+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/107 [status:201 request:0.016s]
+[2025-02-08T10:34:14.642+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/108 [status:201 request:0.016s]
+[2025-02-08T10:34:14.671+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/109 [status:201 request:0.026s]
+[2025-02-08T10:34:14.687+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/110 [status:201 request:0.011s]
+[2025-02-08T10:34:14.705+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/111 [status:201 request:0.016s]
+[2025-02-08T10:34:14.727+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/112 [status:201 request:0.013s]
+[2025-02-08T10:34:14.745+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/113 [status:201 request:0.013s]
+[2025-02-08T10:34:14.767+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/114 [status:201 request:0.017s]
+[2025-02-08T10:34:14.798+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/115 [status:201 request:0.027s]
+[2025-02-08T10:34:14.816+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/116 [status:201 request:0.014s]
+[2025-02-08T10:34:14.835+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/117 [status:201 request:0.015s]
+[2025-02-08T10:34:14.854+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/118 [status:201 request:0.016s]
+[2025-02-08T10:34:14.873+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/119 [status:201 request:0.016s]
+[2025-02-08T10:34:14.900+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/120 [status:201 request:0.021s]
+[2025-02-08T10:34:14.920+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/121 [status:201 request:0.018s]
+[2025-02-08T10:34:14.946+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/122 [status:201 request:0.017s]
+[2025-02-08T10:34:14.962+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/123 [status:201 request:0.012s]
+[2025-02-08T10:34:14.983+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/124 [status:201 request:0.019s]
+[2025-02-08T10:34:15.012+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/125 [status:201 request:0.026s]
+[2025-02-08T10:34:15.085+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/126 [status:201 request:0.061s]
+[2025-02-08T10:34:15.142+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/127 [status:201 request:0.044s]
+[2025-02-08T10:34:15.198+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/128 [status:201 request:0.049s]
+[2025-02-08T10:34:15.262+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/129 [status:201 request:0.056s]
+[2025-02-08T10:34:15.333+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/130 [status:201 request:0.064s]
+[2025-02-08T10:34:15.496+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/131 [status:201 request:0.083s]
+[2025-02-08T10:34:15.529+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/132 [status:201 request:0.021s]
+[2025-02-08T10:34:15.559+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/133 [status:201 request:0.021s]
+[2025-02-08T10:34:15.603+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/134 [status:201 request:0.033s]
+[2025-02-08T10:34:15.650+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/135 [status:201 request:0.039s]
+[2025-02-08T10:34:15.679+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/136 [status:201 request:0.019s]
+[2025-02-08T10:34:15.695+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/137 [status:201 request:0.012s]
+[2025-02-08T10:34:15.703+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/138 [status:201 request:0.007s]
+[2025-02-08T10:34:15.735+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/139 [status:201 request:0.026s]
+[2025-02-08T10:34:15.800+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/140 [status:201 request:0.048s]
+[2025-02-08T10:34:15.846+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/141 [status:201 request:0.035s]
+[2025-02-08T10:34:15.883+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/142 [status:201 request:0.032s]
+[2025-02-08T10:34:15.907+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/143 [status:201 request:0.018s]
+[2025-02-08T10:34:16.044+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/144 [status:201 request:0.132s]
+[2025-02-08T10:34:16.133+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/145 [status:201 request:0.077s]
+[2025-02-08T10:34:16.206+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/146 [status:201 request:0.057s]
+[2025-02-08T10:34:16.338+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/147 [status:201 request:0.122s]
+[2025-02-08T10:34:16.433+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/148 [status:201 request:0.082s]
+[2025-02-08T10:34:16.478+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/149 [status:201 request:0.038s]
+[2025-02-08T10:34:16.502+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/150 [status:201 request:0.019s]
+[2025-02-08T10:34:16.610+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/151 [status:201 request:0.091s]
+[2025-02-08T10:34:16.722+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/152 [status:201 request:0.090s]
+[2025-02-08T10:34:16.798+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/153 [status:201 request:0.040s]
+[2025-02-08T10:34:16.862+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/154 [status:201 request:0.049s]
+[2025-02-08T10:34:16.877+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/155 [status:201 request:0.012s]
+[2025-02-08T10:34:16.893+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/156 [status:201 request:0.013s]
+[2025-02-08T10:34:16.909+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/157 [status:201 request:0.013s]
+[2025-02-08T10:34:17.042+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/158 [status:201 request:0.130s]
+[2025-02-08T10:34:17.066+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/159 [status:201 request:0.014s]
+[2025-02-08T10:34:17.375+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/160 [status:201 request:0.282s]
+[2025-02-08T10:34:17.398+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/161 [status:201 request:0.017s]
+[2025-02-08T10:34:17.444+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/162 [status:201 request:0.043s]
+[2025-02-08T10:34:17.542+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/163 [status:201 request:0.083s]
+[2025-02-08T10:34:18.152+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/164 [status:201 request:0.581s]
+[2025-02-08T10:34:18.273+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/165 [status:201 request:0.058s]
+[2025-02-08T10:34:18.330+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/166 [status:201 request:0.032s]
+[2025-02-08T10:34:18.363+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/167 [status:201 request:0.028s]
+[2025-02-08T10:34:18.410+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/168 [status:201 request:0.039s]
+[2025-02-08T10:34:18.449+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/169 [status:201 request:0.032s]
+[2025-02-08T10:34:18.499+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/170 [status:201 request:0.038s]
+[2025-02-08T10:34:18.594+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/171 [status:201 request:0.090s]
+[2025-02-08T10:34:18.663+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/172 [status:201 request:0.061s]
+[2025-02-08T10:34:18.802+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/173 [status:201 request:0.114s]
+[2025-02-08T10:34:18.902+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/174 [status:201 request:0.092s]
+[2025-02-08T10:34:18.989+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/175 [status:201 request:0.037s]
+[2025-02-08T10:34:19.046+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/176 [status:201 request:0.044s]
+[2025-02-08T10:34:19.101+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/177 [status:201 request:0.040s]
+[2025-02-08T10:34:19.123+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/178 [status:201 request:0.017s]
+[2025-02-08T10:34:19.161+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/179 [status:201 request:0.033s]
+[2025-02-08T10:34:19.194+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/180 [status:201 request:0.028s]
+[2025-02-08T10:34:19.231+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/181 [status:201 request:0.031s]
+[2025-02-08T10:34:19.256+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/182 [status:201 request:0.018s]
+[2025-02-08T10:34:19.286+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/183 [status:201 request:0.026s]
+[2025-02-08T10:34:19.391+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/184 [status:201 request:0.085s]
+[2025-02-08T10:34:19.426+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/185 [status:201 request:0.014s]
+[2025-02-08T10:34:19.457+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/186 [status:201 request:0.017s]
+[2025-02-08T10:34:19.490+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/187 [status:201 request:0.028s]
+[2025-02-08T10:34:19.528+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/188 [status:201 request:0.033s]
+[2025-02-08T10:34:19.562+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/189 [status:201 request:0.028s]
+[2025-02-08T10:34:19.595+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/190 [status:201 request:0.019s]
+[2025-02-08T10:34:19.614+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/191 [status:201 request:0.016s]
+[2025-02-08T10:34:19.635+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/192 [status:201 request:0.017s]
+[2025-02-08T10:34:19.691+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/193 [status:201 request:0.050s]
+[2025-02-08T10:34:19.726+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/194 [status:201 request:0.026s]
+[2025-02-08T10:34:19.756+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/195 [status:201 request:0.019s]
+[2025-02-08T10:34:19.822+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/196 [status:201 request:0.060s]
+[2025-02-08T10:34:19.882+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/197 [status:201 request:0.052s]
+[2025-02-08T10:34:19.946+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/198 [status:201 request:0.040s]
+[2025-02-08T10:34:19.980+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/199 [status:201 request:0.029s]
+[2025-02-08T10:34:20.009+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/200 [status:201 request:0.025s]
+[2025-02-08T10:34:20.049+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/201 [status:201 request:0.035s]
+[2025-02-08T10:34:20.085+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/202 [status:201 request:0.026s]
+[2025-02-08T10:34:20.113+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/203 [status:201 request:0.024s]
+[2025-02-08T10:34:20.161+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/204 [status:201 request:0.035s]
+[2025-02-08T10:34:20.178+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/205 [status:201 request:0.015s]
+[2025-02-08T10:34:20.205+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/206 [status:201 request:0.022s]
+[2025-02-08T10:34:20.258+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/207 [status:201 request:0.040s]
+[2025-02-08T10:34:20.288+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/208 [status:201 request:0.025s]
+[2025-02-08T10:34:20.314+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/209 [status:201 request:0.020s]
+[2025-02-08T10:34:20.338+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/210 [status:201 request:0.019s]
+[2025-02-08T10:34:20.362+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/211 [status:201 request:0.017s]
+[2025-02-08T10:34:20.397+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/212 [status:201 request:0.030s]
+[2025-02-08T10:34:20.428+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/213 [status:201 request:0.027s]
+[2025-02-08T10:34:20.441+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/214 [status:201 request:0.009s]
+[2025-02-08T10:34:20.469+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/215 [status:201 request:0.025s]
+[2025-02-08T10:34:20.499+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/216 [status:201 request:0.024s]
+[2025-02-08T10:34:20.527+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/217 [status:201 request:0.023s]
+[2025-02-08T10:34:20.542+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/218 [status:201 request:0.011s]
+[2025-02-08T10:34:20.557+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/219 [status:201 request:0.011s]
+[2025-02-08T10:34:20.579+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/220 [status:201 request:0.019s]
+[2025-02-08T10:34:20.598+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/221 [status:201 request:0.016s]
+[2025-02-08T10:34:20.612+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/222 [status:201 request:0.010s]
+[2025-02-08T10:34:20.631+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/223 [status:201 request:0.015s]
+[2025-02-08T10:34:20.651+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/224 [status:201 request:0.017s]
+[2025-02-08T10:34:20.698+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/225 [status:201 request:0.039s]
+[2025-02-08T10:34:20.723+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/226 [status:201 request:0.021s]
+[2025-02-08T10:34:20.742+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/227 [status:201 request:0.015s]
+[2025-02-08T10:34:20.761+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/228 [status:201 request:0.014s]
+[2025-02-08T10:34:20.774+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/229 [status:201 request:0.010s]
+[2025-02-08T10:34:20.786+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/230 [status:201 request:0.010s]
+[2025-02-08T10:34:20.821+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/231 [status:201 request:0.030s]
+[2025-02-08T10:34:20.858+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/232 [status:201 request:0.032s]
+[2025-02-08T10:34:20.891+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/233 [status:201 request:0.030s]
+[2025-02-08T10:34:20.911+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/234 [status:201 request:0.008s]
+[2025-02-08T10:34:20.928+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/235 [status:201 request:0.015s]
+[2025-02-08T10:34:20.986+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/236 [status:201 request:0.051s]
+[2025-02-08T10:34:21.000+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/237 [status:201 request:0.012s]
+[2025-02-08T10:34:21.019+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/238 [status:201 request:0.015s]
+[2025-02-08T10:34:21.059+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/239 [status:201 request:0.037s]
+[2025-02-08T10:34:21.131+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/240 [status:201 request:0.067s]
+[2025-02-08T10:34:21.149+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/241 [status:201 request:0.014s]
+[2025-02-08T10:34:21.173+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/242 [status:201 request:0.021s]
+[2025-02-08T10:34:21.192+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/243 [status:201 request:0.011s]
+[2025-02-08T10:34:21.239+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/244 [status:201 request:0.045s]
+[2025-02-08T10:34:21.264+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/245 [status:201 request:0.019s]
+[2025-02-08T10:34:21.338+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/246 [status:201 request:0.066s]
+[2025-02-08T10:34:21.369+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/247 [status:201 request:0.027s]
+[2025-02-08T10:34:21.385+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/248 [status:201 request:0.010s]
+[2025-02-08T10:34:21.431+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/249 [status:201 request:0.043s]
+[2025-02-08T10:34:21.454+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/250 [status:201 request:0.020s]
+[2025-02-08T10:34:21.501+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/251 [status:201 request:0.043s]
+[2025-02-08T10:34:21.526+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/252 [status:201 request:0.020s]
+[2025-02-08T10:34:21.548+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/253 [status:201 request:0.015s]
+[2025-02-08T10:34:21.586+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/254 [status:201 request:0.035s]
+[2025-02-08T10:34:21.600+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/255 [status:201 request:0.010s]
+[2025-02-08T10:34:21.702+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/256 [status:201 request:0.095s]
+[2025-02-08T10:34:21.722+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/257 [status:201 request:0.015s]
+[2025-02-08T10:34:21.775+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/258 [status:201 request:0.049s]
+[2025-02-08T10:34:21.833+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/259 [status:201 request:0.049s]
+[2025-02-08T10:34:21.868+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/260 [status:201 request:0.031s]
+[2025-02-08T10:34:21.890+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/261 [status:201 request:0.015s]
+[2025-02-08T10:34:21.905+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/262 [status:201 request:0.012s]
+[2025-02-08T10:34:21.927+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/263 [status:201 request:0.019s]
+[2025-02-08T10:34:21.949+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/264 [status:201 request:0.017s]
+[2025-02-08T10:34:21.965+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/265 [status:201 request:0.011s]
+[2025-02-08T10:34:21.978+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/266 [status:201 request:0.010s]
+[2025-02-08T10:34:21.994+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/267 [status:201 request:0.012s]
+[2025-02-08T10:34:22.016+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/268 [status:201 request:0.019s]
+[2025-02-08T10:34:22.036+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/269 [status:201 request:0.016s]
+[2025-02-08T10:34:22.052+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/270 [status:201 request:0.012s]
+[2025-02-08T10:34:22.070+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/271 [status:201 request:0.015s]
+[2025-02-08T10:34:22.128+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/272 [status:201 request:0.051s]
+[2025-02-08T10:34:22.202+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/273 [status:201 request:0.057s]
+[2025-02-08T10:34:22.489+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/274 [status:201 request:0.194s]
+[2025-02-08T10:34:22.542+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/275 [status:201 request:0.044s]
+[2025-02-08T10:34:22.597+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/276 [status:201 request:0.040s]
+[2025-02-08T10:34:22.623+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/277 [status:201 request:0.016s]
+[2025-02-08T10:34:22.817+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/278 [status:201 request:0.188s]
+[2025-02-08T10:34:22.839+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/279 [status:201 request:0.015s]
+[2025-02-08T10:34:22.889+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/280 [status:201 request:0.035s]
+[2025-02-08T10:34:23.017+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/281 [status:201 request:0.109s]
+[2025-02-08T10:34:23.069+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/282 [status:201 request:0.039s]
+[2025-02-08T10:34:23.112+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/283 [status:201 request:0.031s]
+[2025-02-08T10:34:23.129+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/284 [status:201 request:0.013s]
+[2025-02-08T10:34:23.309+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/285 [status:201 request:0.177s]
+[2025-02-08T10:34:23.436+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/286 [status:201 request:0.097s]
+[2025-02-08T10:34:23.537+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/287 [status:201 request:0.099s]
+[2025-02-08T10:34:23.810+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/288 [status:201 request:0.268s]
+[2025-02-08T10:34:24.376+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/289 [status:201 request:0.294s]
+[2025-02-08T10:34:24.472+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/290 [status:201 request:0.080s]
+[2025-02-08T10:34:24.637+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/291 [status:201 request:0.067s]
+[2025-02-08T10:34:24.739+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/292 [status:201 request:0.069s]
+[2025-02-08T10:34:25.174+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/293 [status:201 request:0.413s]
+[2025-02-08T10:34:25.422+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/294 [status:201 request:0.222s]
+[2025-02-08T10:34:25.870+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/295 [status:201 request:0.181s]
+[2025-02-08T10:34:26.282+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/296 [status:201 request:0.218s]
+[2025-02-08T10:34:26.684+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/297 [status:201 request:0.357s]
+[2025-02-08T10:34:26.944+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/298 [status:201 request:0.163s]
+[2025-02-08T10:34:27.198+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/299 [status:201 request:0.202s]
+[2025-02-08T10:34:27.303+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/300 [status:201 request:0.073s]
+[2025-02-08T10:34:27.406+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/301 [status:201 request:0.061s]
+[2025-02-08T10:34:27.573+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/302 [status:201 request:0.143s]
+[2025-02-08T10:34:27.675+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/303 [status:201 request:0.080s]
+[2025-02-08T10:34:27.771+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/304 [status:201 request:0.062s]
+[2025-02-08T10:34:28.067+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/305 [status:201 request:0.161s]
+[2025-02-08T10:34:29.144+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/306 [status:201 request:1.013s]
+[2025-02-08T10:34:29.329+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/307 [status:201 request:0.124s]
+[2025-02-08T10:34:29.657+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/308 [status:201 request:0.300s]
+[2025-02-08T10:34:29.851+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/309 [status:201 request:0.152s]
+[2025-02-08T10:34:30.318+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/310 [status:201 request:0.370s]
+[2025-02-08T10:34:30.620+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/311 [status:201 request:0.213s]
+[2025-02-08T10:34:30.716+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/312 [status:201 request:0.071s]
+[2025-02-08T10:34:30.805+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/313 [status:201 request:0.071s]
+[2025-02-08T10:34:30.879+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/314 [status:201 request:0.058s]
+[2025-02-08T10:34:31.031+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/315 [status:201 request:0.134s]
+[2025-02-08T10:34:31.141+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/316 [status:201 request:0.091s]
+[2025-02-08T10:34:31.318+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/317 [status:201 request:0.163s]
+[2025-02-08T10:34:31.445+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/318 [status:201 request:0.113s]
+[2025-02-08T10:34:31.689+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/319 [status:201 request:0.210s]
+[2025-02-08T10:34:32.407+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/320 [status:201 request:0.602s]
+[2025-02-08T10:34:32.978+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/321 [status:201 request:0.497s]
+[2025-02-08T10:34:33.586+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/322 [status:201 request:0.288s]
+[2025-02-08T10:34:33.978+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/323 [status:201 request:0.333s]
+[2025-02-08T10:34:34.158+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/324 [status:201 request:0.150s]
+[2025-02-08T10:34:34.348+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/325 [status:201 request:0.093s]
+[2025-02-08T10:34:34.570+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/326 [status:201 request:0.191s]
+[2025-02-08T10:34:34.644+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/327 [status:201 request:0.041s]
+[2025-02-08T10:34:34.756+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/328 [status:201 request:0.082s]
+[2025-02-08T10:34:35.151+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/329 [status:201 request:0.197s]
+[2025-02-08T10:34:35.507+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/330 [status:201 request:0.321s]
+[2025-02-08T10:34:35.905+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/331 [status:201 request:0.323s]
+[2025-02-08T10:34:36.705+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/332 [status:201 request:0.727s]
+[2025-02-08T10:34:37.326+0000] {base.py:271} INFO - PUT http://elasticsearch:9200/retail_inventory/_doc/333 [status:201 request:0.434s]
+[2025-02-08T10:34:37.453+0000] {base.py:299} WARNING - PUT http://elasticsearch:9200/retail_inventory/_doc/334 [status:N/A request:0.075s]
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1373, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 280, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 252, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1373, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 280, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+[2025-02-08T10:34:37.554+0000] {base.py:299} WARNING - PUT http://elasticsearch:9200/retail_inventory/_doc/334 [status:N/A request:0.007s]
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 252, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.7/http/client.py", line 1281, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1327, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1276, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1036, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.7/http/client.py", line 976, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0xffff8fdd7fd0>: Failed to establish a new connection: [Errno 111] Connection refused
+[2025-02-08T10:34:37.558+0000] {base.py:299} WARNING - PUT http://elasticsearch:9200/retail_inventory/_doc/334 [status:N/A request:0.001s]
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 252, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.7/http/client.py", line 1281, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1327, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1276, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1036, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.7/http/client.py", line 976, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0xffff8fe7ea90>: Failed to establish a new connection: [Errno 111] Connection refused
+[2025-02-08T10:34:37.562+0000] {base.py:299} WARNING - PUT http://elasticsearch:9200/retail_inventory/_doc/334 [status:N/A request:0.003s]
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 252, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.7/http/client.py", line 1281, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1327, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1276, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1036, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.7/http/client.py", line 976, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0xffff8f4d9910>: Failed to establish a new connection: [Errno 111] Connection refused
+[2025-02-08T10:34:37.565+0000] {taskinstance.py:1902} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 252, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.7/http/client.py", line 1281, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1327, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1276, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1036, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.7/http/client.py", line 976, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0xffff8f4d9910>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/P2M3_RizkySP_DAG.py", line 55, in post_to_elasticsearch
+    es.index(index='retail_inventory', id=i, body=row.to_dict())  # Fix: Replacing `document` with `body`
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/client/utils.py", line 168, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/client/__init__.py", line 411, in index
+    body=body,
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/transport.py", line 413, in perform_request
+    raise e
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/transport.py", line 388, in perform_request
+    timeout=timeout,
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 266, in perform_request
+    raise ConnectionError("N/A", str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0xffff8f4d9910>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0xffff8f4d9910>: Failed to establish a new connection: [Errno 111] Connection refused)
+[2025-02-08T10:34:37.760+0000] {taskinstance.py:1412} INFO - Marking task as FAILED. dag_id=pipeline_milestone_3, task_id=post_to_elasticsearch, execution_date=20250208T103359, start_date=20250208T103407, end_date=20250208T103437
+[2025-02-08T10:34:37.810+0000] {standard_task_runner.py:97} ERROR - Failed to execute job 37 for task post_to_elasticsearch (ConnectionError(<urllib3.connection.HTTPConnection object at 0xffff8f4d9910>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0xffff8f4d9910>: Failed to establish a new connection: [Errno 111] Connection refused); 1812)
+[2025-02-08T10:34:37.847+0000] {local_task_job.py:156} INFO - Task exited with return code 1
+[2025-02-08T10:34:38.195+0000] {local_task_job.py:279} INFO - 0 downstream tasks scheduled from follow-on schedule check
