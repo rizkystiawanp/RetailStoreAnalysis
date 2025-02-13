@@ -25,10 +25,10 @@ For retail companies operating across multiple regions and product lines, unders
 The primary goal of this analysis is to provide data-driven insights to improve business strategy and profitability.
 
 ## Project Objectives
-✅ Analyze sales performance and profitability by product category & region.
-✅ Identify demand trends and customer purchasing patterns.
-✅ Evaluate the impact of competitor pricing on unit sales.
-✅ Assess how weather and seasonal patterns affect demand.
+✅ Analyze sales performance and profitability by product category & region. <br>
+✅ Identify demand trends and customer purchasing patterns.<br>
+✅ Evaluate the impact of competitor pricing on unit sales.<br>
+✅ Assess how weather and seasonal patterns affect demand.<br>
 ✅ Provide business recommendations for inventory and marketing optimization.
 
 ## Target Users
