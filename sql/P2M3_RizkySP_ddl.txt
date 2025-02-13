@@ -1,0 +1,31 @@
+URL Dataset: /Users/rizkystiawanp/Documents/Hacktiv8/H8-P2/MILESTONE_P2/p2-ftds024-hck-m3-rizkystiawanp/P2M3_RizkySP_data_raw.csv
+
+-- DDL: Create Table
+
+CREATE TABLE table_m3 (
+"Date" DATE,
+    "Store_ID" VARCHAR(10),
+    "Product_ID" VARCHAR(10),
+    "Category" VARCHAR(50),
+    "Region" VARCHAR(50),
+    "Inventory_Level" INT,
+    "Units_Sold" INT,
+    "Units_Ordered" INT,
+    "Demand_Forecast" FLOAT,
+    "Price" DECIMAL(10,2),
+    "Discount" INT,
+    "Weather_Condition" VARCHAR(20),
+    "Holiday_Promotion" BOOLEAN,
+    "Competitor_Pricing" DECIMAL(10,2),
+    "Seasonality" VARCHAR(20),
+    PRIMARY KEY ("Store_ID", "Product_ID", "Date")
+);
+
+
+-- DML: Insert Data using COPY
+
+COPY table_m3 
+FROM '/Users/rizkystiawanp/Documents/Hacktiv8/H8-P2/MILESTONE_P2/p2-ftds024-hck-m3-rizkystiawanp/P2M3_RizkySP_data_raw.csv' 
+DELIMITER ',' 
+CSV HEADER;
+
